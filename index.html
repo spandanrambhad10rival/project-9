@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Donation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Book Donation Form</h1>
+        <p>Donate your books and help someone learn!</p>
+
+        <form action="#" method="post">
+
+            <h2>Donor Information</h2>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"
+                      placeholder="Enter your address" required></textarea>
+
+            <h2>Book Information</h2>
+
+            <label for="book">Book Title:</label>
+            <input type="text" id="book" name="book"
+                   placeholder="Enter book title" required>
+
+            <label for="author">Author Name:</label>
+            <input type="text" id="author" name="author"
+                   placeholder="Enter author name" required>
+
+            <label for="category">Book Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select Category</option>
+                <option>Fiction</option>
+                <option>Science</option>
+                <option>Technology</option>
+                <option>Education</option>
+                <option>Story Books</option>
+                <option>Other</option>
+            </select>
+
+            <label for="quantity">Number of Books:</label>
+            <input type="number" id="quantity" name="quantity"
+                   min="1" placeholder="Enter quantity" required>
+
+            <label for="condition">Book Condition:</label>
+            <select id="condition" name="condition" required>
+                <option value="">Select Condition</option>
+                <option>New</option>
+                <option>Good</option>
+                <option>Used</option>
+            </select>
+
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message"
+                      placeholder="Any additional information"></textarea>
+
+            <button type="submit">Donate Books</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
